@@ -14,7 +14,7 @@ public class CoffeeMakerService {
     }
 
     public String saveCoffeeMaker(CoffeeMakerDto dto) {
-        if (dto != null && !CoffeeMakerUtil.validateFields(dto) && !CoffeeMakerUtil.checkDuplicate(coffeeMakers, dto)) {
+        //if (dto != null && !CoffeeMakerUtil.validateFields(dto) && !CoffeeMakerUtil.checkDuplicate(coffeeMakers, dto)) {
             if (index < coffeeMakers.length) {
                 coffeeMakers[index] = dto;
                 index++;
@@ -22,8 +22,9 @@ public class CoffeeMakerService {
             } else {
                 return "Array is full cannot save ";
             }
-        }
-        return "Failed to save as duplicate exists.";
+            
+       // }
+       // return "Failed to save as duplicate exists.";
     }
 
     public String updateBrandName(int productCode, String newBrandName) {
