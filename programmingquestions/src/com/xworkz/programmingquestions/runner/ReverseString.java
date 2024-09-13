@@ -59,17 +59,42 @@ public class ReverseString {
 
 		for (int i = 0; i < result.length; i++) {
 			if (result[i].equalsIgnoreCase(word))
+				result[i]="i";
 
-				count++;
+				
 
 		}
-		System.out.println("occurence of you in given sentence is:" + count);
+		System.out.println(Arrays.toString(result));
+		//System.out.println("occurence of you in given sentence is:" + count);
 	}
+	 public String deleteByYou(String sentence) {
+	        if (sentence != null && !sentence.isEmpty()) {
+	            String word = "you";
+	            String[] result = sentence.split(" ");
+	            String[] updatedResult = new String[result.length];
+	            int j = 0;
+
+	            for (int i = 0; i < result.length; i++) {
+	                if (!result[i].equalsIgnoreCase(word)) {
+	                    updatedResult[j++] = result[i]; 
+	                }
+	            }
+
+	            updatedResult = Arrays.copyOf(updatedResult, j);
+	            String finalSentence = String.join(" ", updatedResult);
+	            return finalSentence;
+	        }
+	        return sentence;
+	    }
 
 	public static void main(String[] args) {
 		ReverseString reverse = new ReverseString();
 		Scanner scanner = new Scanner(System.in);
-
+		System.out.println("enter the string value:");
+		reverse.searchByYou(scanner.nextLine());
+		scanner.nextLine();
+		System.out.println("enter the string value:");
+		reverse.deleteByYou(scanner.nextLine());
 		System.out.println("enter the string value:");
 		reverse.reverseString(scanner.nextLine());
 		scanner.nextLine();
@@ -82,8 +107,8 @@ public class ReverseString {
 		System.out.println("enter the string value:");
 		reverse.splitString(scanner.nextLine());
 		scanner.nextLine();
-		System.out.println("enter the string value:");
-		reverse.searchByYou(scanner.nextLine());
+		
+		
 
 	}
 }
