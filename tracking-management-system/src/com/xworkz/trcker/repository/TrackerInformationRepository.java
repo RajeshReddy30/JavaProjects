@@ -7,4 +7,6 @@ public interface TrackerInformationRepository {
 	boolean onSave(TrackingInformationDto trackingInformationDto);
 	TrackingInformationDto[] read();
 	boolean duplicateCheck(TrackingInformationDto trackingInformationDto);
+	boolean updateByTrackerId(int trackerId,TrackingInformationDto trackingInformationDto);
+	boolean deleteByProductName(String productName);
 }

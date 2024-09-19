@@ -41,4 +41,24 @@ public class TrackerInformationImplimentation implements TrackerInformation {
 		
 	}
 
+	@Override
+	public String updateByTrackerId(int trackerId, TrackingInformationDto trackingInformationDto) {
+		System.out.println("update method");
+		if(trackerId!=0) {
+			repo.updateByTrackerId(trackerId, trackingInformationDto);
+			return "updated successfully";
+		}
+		return "not updated";
+	}
+
+	@Override
+	public String deleteByProductName(String productName) {
+		if(productName!=null) {
+			repo.deleteByProductName(productName);
+			return "deleted successfully";
+		}
+		return "not deleted";
+	}
+
 }
+
