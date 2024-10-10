@@ -59,7 +59,8 @@ public class TrackerInformationRepositoryImplimentation implements TrackerInform
 		System.out.println("update method is running");
 		if (trackerId != 0) {
 			for (int i = 0; i < listOfArray.length; i++) {
-				if (listOfArray[i] != null && listOfArray[i].getTrackerId() == trackerId) {
+				if (listOfArray[i] != null && listOfArray[i].getTrackerId()==trackerId) {
+					System.out.println("update by trackerId");
 					listOfArray[i].setFromLocation(trackingInformationDto.getFromLocation());
 					listOfArray[i].setToLocation(trackingInformationDto.getToLocation());
 					listOfArray[i].setPackageName(trackingInformationDto.getPackageName());
@@ -74,6 +75,7 @@ public class TrackerInformationRepositoryImplimentation implements TrackerInform
 
 	}
 
+	
 	@Override
 	public boolean deleteByProductName(String productName) {
 
@@ -86,7 +88,6 @@ public class TrackerInformationRepositoryImplimentation implements TrackerInform
 
 				listOfArray = Arrays.copyOf(listOfArray, j);
 				System.out.println("Deleted successfully.");
-
 			}
 
 		}
