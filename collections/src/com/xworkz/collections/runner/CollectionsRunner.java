@@ -8,124 +8,7 @@ import java.util.LinkedList;
 public class CollectionsRunner {
 
 	public static void main(String[] args) {
-//		Collection<String> collectionOfStateNames = new ArrayList<String>();
-//		collectionOfStateNames.add("Karnataka");
-//		collectionOfStateNames.add("Maharashtra");
-//		collectionOfStateNames.add("Tamil Nadu");
-//		collectionOfStateNames.add("Kerala");
-//		collectionOfStateNames.add("Andhra Pradesh");
-//		collectionOfStateNames.add("Telangana");
-//		collectionOfStateNames.add("Gujarat");
-//		collectionOfStateNames.add("Rajasthan");
-//		collectionOfStateNames.add("Uttar Pradesh");
-//		collectionOfStateNames.add("Madhya Pradesh");
-//		collectionOfStateNames.add("West Bengal");
-//		collectionOfStateNames.add("Punjab");
-//		collectionOfStateNames.add("Bihar");
-//		collectionOfStateNames.add("Odisha");
-//		collectionOfStateNames.add("Assam");
-//		System.out.println("state names:"+collectionOfStateNames);
-//		Collection<Integer> collectionOfNumbers = new ArrayList<Integer>();
-//		collectionOfNumbers.add(5);
-//		collectionOfNumbers.add(12);
-//		collectionOfNumbers.add(23);
-//		collectionOfNumbers.add(34);
-//		collectionOfNumbers.add(45);
-//		collectionOfNumbers.add(56);
-//		collectionOfNumbers.add(67);
-//		collectionOfNumbers.add(78);
-//		collectionOfNumbers.add(89);
-//		collectionOfNumbers.add(90);
-//		collectionOfNumbers.add(101);
-//		collectionOfNumbers.add(112);
-//		collectionOfNumbers.add(123);
-//		collectionOfNumbers.add(134);
-//		collectionOfNumbers.add(145);
-//		System.out.println("numbers:"+collectionOfNumbers);
-//		Collection<Float> collectionOfFloatNumbers = new ArrayList<Float>();
-//
-//		collectionOfFloatNumbers.add(5.1f);
-//		collectionOfFloatNumbers.add(12.2f);
-//		collectionOfFloatNumbers.add(23.3f);
-//		collectionOfFloatNumbers.add(34.4f);
-//		collectionOfFloatNumbers.add(45.5f);
-//		collectionOfFloatNumbers.add(56.6f);
-//		collectionOfFloatNumbers.add(67.7f);
-//		collectionOfFloatNumbers.add(78.8f);
-//		collectionOfFloatNumbers.add(89.9f);
-//		collectionOfFloatNumbers.add(90.0f);
-//		collectionOfFloatNumbers.add(101.1f);
-//		collectionOfFloatNumbers.add(112.2f);
-//		collectionOfFloatNumbers.add(123.3f);
-//		collectionOfFloatNumbers.add(134.4f);
-//		collectionOfFloatNumbers.add(145.5f);
-//		System.out.println("float number:"+collectionOfFloatNumbers);
-//		Collection<Long> collectionOfLongNumbers = new ArrayList<>();
-//
-//		collectionOfLongNumbers.add(123456789012345L);
-//		collectionOfLongNumbers.add(234567890123456L);
-//		collectionOfLongNumbers.add(345678901234567L);
-//		collectionOfLongNumbers.add(456789012345678L);
-//		collectionOfLongNumbers.add(567890123456789L);
-//		collectionOfLongNumbers.add(678901234567890L);
-//		collectionOfLongNumbers.add(789012345678901L);
-//		collectionOfLongNumbers.add(890123456789012L);
-//		collectionOfLongNumbers.add(901234567890123L);
-//		collectionOfLongNumbers.add(112345678901234L);
-//		collectionOfLongNumbers.add(223456789012345L);
-//		collectionOfLongNumbers.add(334567890123456L);
-//		collectionOfLongNumbers.add(445678901234567L);
-//		collectionOfLongNumbers.add(556789012345678L);
-//		collectionOfLongNumbers.add(667890123456789L);
-//		System.out.println("long numbers:"+collectionOfLongNumbers);
-//		Collection<Double> collectionOfRates = new ArrayList<>();
-//
-//		collectionOfRates.add(110.05);
-//		collectionOfRates.add(4340.03);
-//		collectionOfRates.add(430.07);
-//		collectionOfRates.add(66770.02);
-//		collectionOfRates.add(0.0876984);
-//		collectionOfRates.add(0.0796);
-//		collectionOfRates.add(8780.08);
-//		collectionOfRates.add(0.09);
-//		collectionOfRates.add(08989.08098);
-//		collectionOfRates.add(0.1);
-//
-//		System.out.println(collectionOfRates);
-//		Collection<Character> collectionOfChars = new ArrayList<>();
-//
-//		collectionOfChars.add('A');
-//		collectionOfChars.add('B');
-//		collectionOfChars.add('C');
-//		collectionOfChars.add('D');
-//		collectionOfChars.add('E');
-//		collectionOfChars.add('F');
-//		collectionOfChars.add('G');
-//		collectionOfChars.add('H');
-//		collectionOfChars.add('I');
-//		collectionOfChars.add('J');
-//
-//		System.out.println(collectionOfChars);
-//		List<String> actors=new ArrayList();
-//		actors.add("NTR");
-//		actors.add("Allu Arjun");
-//		actors.add("Mahesh babu");
-//		List<String>  movieListOfNTR =new ArrayList<String>();
-//		movieListOfNTR.add("RRR");
-//		movieListOfNTR.add("Devera");
-//		movieListOfNTR.add("yamadhonga");
-//		List<String>  movieListOfAlluArjun =new ArrayList<String>();
-//		movieListOfAlluArjun.add("Pushpa");
-//		movieListOfAlluArjun.add("Arya");
-//		movieListOfAlluArjun.add("RaceGuram");
-//		List<String>  movieListOfMaheshBabu =new ArrayList<String>();
-//		movieListOfMaheshBabu.add("Pokiri");
-//		movieListOfMaheshBabu.add("Dukudu");
-//		movieListOfMaheshBabu.add("Maharshi");
-//		actors.forEach(s->System.out.println(s));
-//		movieListOfNTR.forEach(s->System.out.println(s));
-//		movieListOfAlluArjun.forEach(s->System.out.println(s));
-//		movieListOfMaheshBabu.forEach(s->System.out.println(s));
+
 		List<String> streams = new ArrayList<String>();
 		streams.add("cs");
 		streams.add("IS");
@@ -162,68 +45,135 @@ public class CollectionsRunner {
 		stream.add("ME");
 		stream.add("EEE");
 		System.out.println("streams of BE:" + stream);
-		// stream.clone();
-		System.out.println(stream);
 
 		System.out.println(stream.get(3));
 
-		LinkedList<String> subjects = new LinkedList<>();
+		LinkedList<String> bikes = new LinkedList<String>();
 
-		subjects.add("Mathematics");
-		subjects.add("Physics");
-		subjects.add("Chemistry");
-		subjects.add("Biology");
-		System.out.println("Initial subject list:" + subjects);
+		bikes.add("Yamaha");
+		bikes.add("Honda");
+		bikes.add("Suzuki");
+		bikes.add("Kawasaki");
+		bikes.add("Ducati");
+		bikes.add("Royal Enfield");
+		bikes.add("TVS");
+		System.out.println("Bike Brands :" + bikes);
 
-		subjects.add(0, "Computer Science");
-		System.out.println("After adding 'Computer Science' at index 0:" + subjects);
+		bikes.add(3, "Harley Davidson");
+		System.out.println("After add by index 3 :" + bikes);
 
-		subjects.add("English");
-		System.out.println("After adding English: " + subjects);
+		LinkedList<String> newBikes = new LinkedList<String>();
 
-		System.out.println("First subject peek: " + subjects.peek());
-		System.out.println("Last subject peek: " + subjects.peekLast());
+		newBikes.add("BMW");
+		newBikes.add("KTM");
+		newBikes.add("Benelli");
 
-		String firstSubject = subjects.poll();
-		System.out.println("Polled first subject: " + firstSubject);
-		System.out.println("Subjects after polling:" + subjects);
+		bikes.addAll(newBikes);
+		System.out.println("After add all :" + bikes);
 
-		System.out.println("Subject at index 2: " + subjects.get(2));
+		bikes.addFirst("Bajaj");
+		System.out.println("After add First :" + bikes);
 
-		System.out.println("Contains Mathematics:" + subjects.contains("Mathematics"));
+		bikes.addLast("Aprilia");
+		System.out.println("After add Last :" + bikes);
 
-		subjects.remove("Biology");
-		System.out.println("After removing Biology: " + subjects);
+		boolean isContainSuzuki = bikes.contains("Suzuki");
+		System.out.println("isContain Suzuki :" + isContainSuzuki);
 
-		subjects.remove(1);
-		System.out.println("After removing subject at index 1:" + subjects);
+		boolean isContainAll = bikes.containsAll(newBikes);
+		System.out.println("isContain All new Bikes :" + isContainAll);
 
-		List<String> newSubjects = new LinkedList<>();
-		newSubjects.add("History");
-		newSubjects.add("Geography");
+		System.out.println("Element :" + bikes.element());
 
-		subjects.addAll(newSubjects);
-		System.out.println("After adding new subjects:" + subjects);
+		boolean isEqual = bikes.equals(newBikes);
+		System.out.println("Bikes is equals to newBikes :" + isEqual);
 
-		System.out.println("Index of English: " + subjects.indexOf("English"));
+		System.out.println("get index 4 :" + bikes.get(4));
 
-		subjects.set(0, "Computer Science data scince");
-		System.out.println("After replacing first subject: " + subjects);
+		System.out.println("get Class :" + bikes.getClass());
 
-		subjects.retainAll(newSubjects);
-		System.out.println("After retaining new subjects: " + subjects);
+		System.out.println("get First :" + bikes.getFirst());
 
-		System.out.println("Number of subjects: " + subjects.size());
+		System.out.println("get Last :" + bikes.getLast());
 
-		subjects.addFirst("Philosophy");
-		subjects.addLast("Political Science");
-		System.out.println("After adding first and last subjects: " + subjects);
+		System.out.println("index of Honda :" + bikes.indexOf("Honda"));
 
-		String removedFirst = subjects.removeFirst();
-		String removedLast = subjects.removeLast();
-		System.out.println("Removed first subject: " + removedFirst);
-		System.out.println("Removed last subject: " + removedLast);
-		System.out.println("Subjects after removals: " + subjects);
+		System.out.println("is Empty :" + bikes.isEmpty());
+
+		System.out.println("last index of Ducati :" + bikes.lastIndexOf("Ducati"));
+
+		bikes.offer("MV Agusta");
+		System.out.println("After Offer :" + bikes);
+
+		bikes.offerFirst("Triumph");
+		System.out.println("After Offer First :" + bikes);
+
+		bikes.offerLast("Indian");
+		System.out.println("After Offer Last :" + bikes);
+
+		System.out.println("peek :" + bikes.peek());
+
+		System.out.println("peek First :" + bikes.peekFirst());
+
+		System.out.println("peek Last :" + bikes.peekLast());
+
+		bikes.poll();
+		System.out.println("after poll :" + bikes);
+
+		bikes.pollFirst();
+		System.out.println("after poll First :" + bikes);
+
+		bikes.pollLast();
+		System.out.println("after poll Last :" + bikes);
+
+		bikes.pop();
+		System.out.println("after pop :" + bikes);
+
+		bikes.push("Hero");
+		System.out.println("after push :" + bikes);
+
+		bikes.remove();
+		System.out.println("after remove :" + bikes);
+
+		bikes.remove(6);
+		System.out.println("after removed index 6 :" + bikes);
+
+		bikes.remove("Kawasaki");
+		System.out.println("after remove Kawasaki :" + bikes);
+
+		bikes.removeFirst();
+		System.out.println("after remove First :" + bikes);
+
+		bikes.removeLast();
+		System.out.println("after remove Last :" + bikes);
+
+		bikes.removeFirstOccurrence("BMW");
+		System.out.println("after remove first occurance :" + bikes);
+
+		bikes.removeLastOccurrence("Harley Davidson");
+		System.out.println("after remove last occurance :" + bikes);
+
+		bikes.removeAll(newBikes);
+		System.out.println("after remove all newBikes :" + bikes);
+
+		bikes.sort(null);
+		System.out.println("after sort :" + bikes);
+
+		System.out.println("size :" + bikes.size());
+
+		System.out.println("sublist :" + bikes.subList(0, 2));
+
+		bikes.set(2, "Thunderbird");
+		System.out.println("after set :" + bikes);
+
+		System.out.println("to Array :");
+		Object[] array = bikes.toArray();
+		for (Object b : array) {
+			System.out.println(b);
+		}
+
+		bikes.retainAll(newBikes);
+		System.out.println("after retain all :" + bikes);
+
 	}
-
 }
