@@ -2,6 +2,7 @@ package com.xworkz.streams.runner;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -15,14 +16,12 @@ public class StreamsRunner {
 		list.add(45);
 		list.add(30);
 		list.add(20);
-		Stream<Integer>stream1 = list.stream();
-		Long count = list.stream().count();
-		System.out.println("Count is:"+count);
-		int sum = IntStream.of(20,23,43,54,36).sum();
 		
-		stream1.distinct().forEach(e->System.out.println(e));
-		System.out.println("Sum Operation");
-		System.out.println(sum);
+		System.out.println("=============");
+		Comparator<Integer> comparator=(Integer s1,Integer s2)->s1.compareTo(s2);
+		list.stream().sorted(comparator).skip(3).distinct().limit(5).forEach(s->System.out.println(s));
+		
+		
 		
 				
 	}
