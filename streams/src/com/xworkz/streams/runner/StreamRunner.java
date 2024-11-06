@@ -41,9 +41,7 @@ public class StreamRunner {
 		System.out.println("============ Skip and Limit ============");
 		list.stream().sorted().distinct().skip(1).limit(3).forEach(s -> System.out.println(s));
 
-		System.out.println("============ Collecting to List ============");
-		List<String> collectedList = lists.stream().distinct().sorted().collect(java.util.stream.Collectors.toList());
-		System.out.println(collectedList);
+		
 
 		System.out.println("============ Find Any ============");
 		Optional<String> anyElement = lists.stream().findAny();
