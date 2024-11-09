@@ -3,7 +3,9 @@ package com.xworkz.streams.runner;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class NumericMethods {
 
@@ -62,6 +64,50 @@ public class NumericMethods {
 		Map<Object, Long> frequency = names.stream()
 				.collect(Collectors.groupingBy(name -> name, Collectors.counting()));
 		System.out.println(frequency);
+		Random random = new Random();
+
+		// generating random numbers 1-100
+		Stream.generate(() -> random.nextInt(100) + 1).limit(20).forEach(System.out::println);
+		List<Integer> numbers1 = new ArrayList<Integer>();
+		numbers1.add(1);
+		numbers1.add(2);
+		numbers1.add(3);
+		numbers1.add(4);
+
+		List<Integer> numbers2 = new ArrayList<Integer>();
+		numbers2.add(5);
+		numbers2.add(6);
+		numbers2.add(7);
+		numbers2.add(8);
+
+		List<Integer> numbers3 = new ArrayList<Integer>();
+		numbers3.add(9);
+		numbers3.add(10);
+		numbers3.add(11);
+		numbers3.add(12);
+
+		List<List<Integer>> listOfNumbers = new ArrayList<List<Integer>>();
+		listOfNumbers.add(numbers1);
+		listOfNumbers.add(numbers2);
+		listOfNumbers.add(numbers3);
+
+		// flattening lists
+		List<Integer> flattenList = listOfNumbers.stream().flatMap(List::stream).collect(Collectors.toList());
+
+		System.out.println(flattenList);
+		List<String> flowers = new ArrayList<String>();
+		flowers.add("Rose");
+		flowers.add("Jasmine");
+		flowers.add("Lotus");
+		flowers.add("Lily");
+		flowers.add("Marygold");
+
+		// Mapping String length
+		Map<String, Integer> lengthCheck = flowers.stream().collect(Collectors.toMap(f -> f, String::length));
+
+		System.out.println("Length of Strings :");
+		System.out.println(lengthCheck);
+
 	}
 
 }
