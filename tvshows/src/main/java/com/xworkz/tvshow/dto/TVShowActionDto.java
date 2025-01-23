@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class TVShowActionDto {
-
+	private int id;
     private String showName;
     private String viewerName;
     private int viewingTime;

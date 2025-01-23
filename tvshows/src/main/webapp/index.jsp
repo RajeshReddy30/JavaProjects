@@ -102,7 +102,9 @@ p {
 	</div>
 	<div class="right-buttons">
 		<button onclick="location.href='details.jsp'">Submit TV Show </button>
+		<button onclick="location.href='view.jsp'">view </button>
 	</div>
+	
 </header>
 
 <main>

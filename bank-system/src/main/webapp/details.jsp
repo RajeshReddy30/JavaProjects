@@ -84,10 +84,7 @@
             <input type="text" id="paymentMethod" name="paymentMethod" class="form-control" placeholder="Enter Payment Method">
         </div>
 
-        <div class="mb-3">
-            <label for="transactionDate" class="form-label">Transaction Date</label>
-            <input type="datetime-local" id="transactionDate" name="transactionDate" class="form-control">
-        </div>
+
 
         <div class="mb-3">
             <label for="initiatedBy" class="form-label">Initiated By</label>

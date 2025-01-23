@@ -45,14 +45,14 @@ h1 {
 <table class="table table-bordered table-striped table-hover">
     <thead>
         <tr>
-            <th>Receiver Name</th>
+            <th>accountHolderName</th>
             <th>Account Number</th>
             <th>Amount</th>           
-            <th>Transaction ID</th>
-            <th>Payment Method</th>
-            <th>Transaction Date</th>
-            <th>Created By</th>           
-            <th>Created On</th>
+            <th>transactionAmount</th>
+            <th>transactionId</th>
+            <th>paymentMethod</th>
+            <th>transactionDate</th>           
+            <th>initiatedBy</th>
         </tr>
     </thead>
     <tbody>
@@ -65,7 +65,7 @@ h1 {
             <td>${details.paymentMethod}</td>
             <td>${details.transactionDate}</td>
             <td>${details.initiatedBy}</td> <!-- Initiated By (Created By) -->
-            <td>${details.transactionTimestamp}</td> <!-- Transaction Timestamp -->
+            
         </tr>
     </tbody>
 </table>

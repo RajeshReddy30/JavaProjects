@@ -38,6 +38,7 @@ h1 {
 </style>
 </head>
 <body>
+<button onclick="location.href='view.jsp'">View</button>
 <div>
     <h1>Player Action Details</h1>
 </div>
@@ -58,7 +59,7 @@ h1 {
             <td>${details.playerScore}</td>
             <td>${details.playerLevel}</td>
             <td>${details.actionType}</td>
-            <td>${details.actionTimestamp}</td>
+            <td>${details.actionTime}</td>
         </tr>
     </tbody>
 </table>

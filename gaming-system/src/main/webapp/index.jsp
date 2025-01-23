@@ -102,6 +102,7 @@ p {
 	</div>
 	<div class="right-buttons">
 		<button onclick="location.href='details.jsp'">Submit Player Action</button>
+		<button onclick="location.href='view.jsp'">View</button>
 	</div>
 </header>
 

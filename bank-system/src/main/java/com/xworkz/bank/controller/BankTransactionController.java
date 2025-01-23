@@ -1,5 +1,7 @@
 package com.xworkz.bank.controller;
 
+
+
 import java.time.LocalDateTime;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +23,7 @@ public class BankTransactionController {
 
     @PostMapping("/submit")
     public String processTransaction(@ModelAttribute BankTransactionDto dto, Model model) {
-        dto.setTransactionTimestamp(LocalDateTime.now());
+    	 dto.setTransactionDate(LocalDateTime.now());
         model.addAttribute("details", dto);
 
         boolean result = service.saveTransaction(dto);

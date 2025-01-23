@@ -49,7 +49,7 @@ h1 {
             <th>Viewing Time</th>
             <th>Action Type</th>
             <th>Created By</th>
-            <th>Created On</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -59,7 +59,9 @@ h1 {
             <td>${details.viewingTime}</td>
             <td>${details.actionType}</td>
             <td>${details.createdBy}</td>
-            <td>${details.createdOn}</td>
+            
+            <td> <a href="delete?id=${details.id}" class="btn btn-danger btn-sm">Delete</a>
+    <a href="update?id=${details.id}" class="btn btn-success btn-sm">Update</a></td>
         </tr>
     </tbody>
 </table>

@@ -12,8 +12,8 @@ public class BankTransactionDto {
     private double transactionAmount;
     private String transactionId;
     private String paymentMethod;
-    private String transactionDate;
+    private LocalDateTime transactionDate;
     private String initiatedBy;
-    private LocalDateTime transactionTimestamp;
+  
 }
 

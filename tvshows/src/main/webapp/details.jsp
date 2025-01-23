@@ -87,10 +87,7 @@
             <label for="createdBy" class="form-label">Created By</label>
             <input type="text" id="createdBy" name="createdBy" class="form-control" placeholder="Enter created by ">
         </div>
-        <div class="mb-3">
-            <label for="createdOn" class="form-label">Created On</label>
-            <input type="datetime-local" id="createdOn" name="createdOn" class="form-control" placeholder="Enter created on ">
-        </div>
+
         <div>
             <button type="submit" class="btn btn-success w-45">Submit </button>
         </div>

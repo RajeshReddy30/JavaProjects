@@ -24,6 +24,9 @@
 
 			<!-- Connection Pooling (Optional) -->
 			<property name="hibernate.connection.pool_size" value="5" />
+			<property value="org.hibernate.dialect.MySQL8Dialect" name="hibernate.dialect" />
+            
+			
 		</properties>
 	</persistence-unit>
 </persistence>
