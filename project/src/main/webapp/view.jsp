@@ -1,10 +1,12 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>VIEW</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -88,11 +90,79 @@
     <header>
         <h1>Home</h1>
         <div><h4 style="margin-right:10px;">${ email} </h4></div>
+        <div class="profile-dropdown">
         <button class="dropdown-btn">View Users</button>
-       
+            <div class="dropdown-content">
+               <form action="Activeusers"><button type="submit">Active</button></form>
+                              <form action="InActiveusers"><button type="submit">InActive</button></form>
+               
+
+       </div>
+      
         </div>
     </header>
+    <form action="view" method="get">
+ <table align="center" border="1" cellpadding="3" >
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>USERNAME</th>
+            <th>EMAIL</th>
+            <th>AADHAR NUMBER</th>
+            <th>CONTACT NUMBER</th>
+            <th>DOB</th>
+            <th>COUNTRY</th>
+            <th>STATE</th>
+            <th>CITY</th>
+            <th>PINCODE</th>
+            <th>ADDRESS</th>
+            <th>ACTION</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Loop for active users -->
+        <c:forEach var="save" items="${save}">
+            <tr>
+                <td>${save.id}</td>
+                <td>${save.userName}</td>
+                <td>${save.email}</td>
+                <td>${save.aadharNumber}</td>
+                <td>${save.contactNumber}</td>
+                <td>${save.dateOfBirth}</td>
+                <td>${save.country}</td>
+                <td>${save.state}</td>
+                <td>${save.city}</td>
+                <td>${save.pincode}</td>
+                <td>${save.address}</td>
+                <td>
+                    <a href="Adminupdate?email=${save.email}">Update</a>
+                    <a href="Admindelete?email=${save.email}">Delete</a>
+                </td>
+            </tr>
+        </c:forEach>
 
+        <c:forEach var="viewInActive" items="${viewInActive}">
+            <tr>
+                <td>${viewInActive.id}</td>
+                <td>${viewInActive.userName}</td>
+                <td>${viewInActive.email}</td>
+                <td>${viewInActive.aadharNumber}</td>
+                <td>${viewInActive.contactNumber}</td>
+                <td>${viewInActive.dateOfBirth}</td>
+                <td>${viewInActive.country}</td>
+                <td>${viewInActive.state}</td>
+                <td>${viewInActive.city}</td>
+                <td>${viewInActive.pincode}</td>
+                <td>${viewInActive.address}</td>
+                <td>
+                    <a href="adminupdateinactive?email=${viewInActive.email}">Update</a>
+                </td>
+            </tr>
+        </c:forEach>
+    </tbody>
+</table>
+
+       </form>
     <main></main>
 
     <footer>

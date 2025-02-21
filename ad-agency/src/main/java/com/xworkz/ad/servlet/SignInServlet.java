@@ -21,7 +21,7 @@ public class SignInServlet extends HttpServlet {
 
 	}
 
-	public void doPost(HttpServletRequest request, HttpServletResponse response){
+	public void doPost(HttpServletRequest request, HttpServletResponse response) {
 		String email = request.getParameter("email");
 		int password = Integer.parseInt(request.getParameter("password"));
 

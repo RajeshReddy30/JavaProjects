@@ -163,17 +163,17 @@
     <h2>Sign Up</h2>
     <form id="registerForm" action="update" method="POST"> 
         <div class="form-group">
-        <input type="hidden" id="id" name="id" value="${updateResult.id }" required>
+        <input type="hidden" id="id" name="id" value="${dto.id }" required>
 					 
         
             <div>
                 <label for="username">Username <span class="required">*</span></label>
-                <input type="text" id="username" name="userName" class="input-field" value="${updateResult.userName }" required minlength="5" maxlength="20">
+                <input type="text" id="username" name="userName" class="input-field" value="${dto.userName }" required minlength="5" maxlength="20">
                 <small class="error-message" id="usernameError"></small><br>
             </div>
             <div>
                 <label for="password">Password <span class="required">*</span></label>
-                <input type="password" id="password" name="password" class="input-field" value="${updateResult.password }"  required minlength="8" maxlength="20" 
+                <input type="password" id="password" name="password" class="input-field" value="${dto.password }"  required minlength="8" maxlength="20" 
                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$" title="Password must be at least 8 characters long and contain both letters and numbers.">
                 <small class="error-message" id="passwordError"></small><br>
             </div>
@@ -182,13 +182,13 @@
         <div class="form-group">
             <div>
                 <label for="email">Email <span class="required">*</span></label>
-                <input type="email" id="email" name="email" class="input-field" value="${updateResult.email }"required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address." onchange="checkEmail()">
+                <input type="email" id="email" name="email" class="input-field" value="${dto.email }"required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address." onchange="checkEmail()">
                 <small class="error-message" id="emailError"></small>
                 <span class="error-message" id="mailResponse"></span>
             </div>
             <div>
                 <label for="aadhar">Aadhar Number <span class="required">*</span></label>
-                <input type="num" id="aadhar" name="aadharNumber" class="input-field" value="${updateResult.aadharNumber }"  required maxlength="12" pattern="^\d{12}$" title="Aadhar number should be 12 digits." onchange="checkAadhar()">
+                <input type="num" id="aadhar" name="aadharNumber" class="input-field" value="${dto.aadharNumber }"  required maxlength="12" pattern="^\d{12}$" title="Aadhar number should be 12 digits." onchange="checkAadhar()">
                 <small class="error-message" id="aadharError"></small>
                 <span class="error-message" id="aadharResponse"></span>
             </div>
@@ -197,13 +197,13 @@
         <div class="form-group">
             <div>
                 <label for="contact">Contact Number <span class="required">*</span></label>
-                <input type="text" id="contact" name="contactNumber" class="input-field" value="${updateResult.contactNumber }"  required pattern="^\d{10}$" title="Contact number should be 10 digits." onchange="checkContact()">
+                <input type="text" id="contact" name="contactNumber" class="input-field" value="${dto.contactNumber }"  required pattern="^\d{10}$" title="Contact number should be 10 digits." onchange="checkContact()">
                 <span class="error-message"  id="contactResponse"></span>
                 <small class="error-message" id="contactError"></small><br>
             </div>
             <div>
                 <label for="dob">Date of Birth <span class="required">*</span></label>
-                <input type="date" id="dob" name="dateOfBirth" class="input-field" value="${updateResult.dateOfBirth }" required>
+                <input type="date" id="dob" name="dateOfBirth" class="input-field" value="${dto.dateOfBirth }" required>
                 <small class="error-message" id="dobError"></small><br>
             </div>
         </div>
@@ -216,7 +216,7 @@
             <div>
                 <label for="state">State <span class="required">*</span></label>
                 <select id="state" name="state" class="input-field" required>
-                <option  value="${updateResult.state }">${updateResult.state }</option>
+                <option  value="${dto.state }">${dto.state }</option>
                     <option value="">Select State</option>
                     <option value="Andhra Pradesh">Andhra Pradesh</option>
                     <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -252,18 +252,18 @@
         <div class="form-group">
             <div>
                 <label for="city">City <span class="required">*</span></label>
-                <input type="text" id="city" name="city" class="input-field" value="${updateResult.city }" required><br>
+                <input type="text" id="city" name="city" class="input-field" value="${dto.city }" required><br>
             </div>
             <div>
                 <label for="pincode">Pincode <span class="required">*</span></label>
-                <input type="text" id="pincode" name="pincode" class="input-field" value="${updateResult.pincode }"  required pattern="^\d{6}$" title="Pincode should be 6 digits."><br>
+                <input type="text" id="pincode" name="pincode" class="input-field" value="${dto.pincode }"  required pattern="^\d{6}$" title="Pincode should be 6 digits."><br>
             </div>
         </div>
 
         <div class="form-group">
             <div class="full-width">
                 <label for="address">Address <span class="required">*</span></label>
-                <input id="address" name="address" class="input-field" value="${updateResult.address }" required rows="4"><br>
+                <input id="address" name="address" class="input-field" value="${dto.address }" required rows="4"><br>
             </div>
         </div>
 

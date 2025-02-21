@@ -23,7 +23,7 @@ public class ProjectConfiguration {
 	}
 
 	@Bean
-	public LocalContainerEntityManagerFactoryBean getGameManager() {
+	public LocalContainerEntityManagerFactoryBean getLocalEntityManager() {
 		return new LocalContainerEntityManagerFactoryBean();
 	}
 

@@ -150,6 +150,7 @@
 
     <div class="signup-link">
         <p>Don't have an account? <a href="signup.jsp">Sign up here</a></p>
+        <p>Forgot Password? <a href="reset.jsp">Reset Password</a></p>
     </div>
 </div>
 

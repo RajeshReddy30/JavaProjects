@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.xworkz.gaming.dto.PlayerActionDto;
 import com.xworkz.gaming.service.GameActionService;
 
-@RequestMapping
+@RequestMapping("/")
 @Component
 public class GameActionController {
 
